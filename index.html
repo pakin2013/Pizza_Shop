@@ -1,0 +1,673 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#2a2a2d", "tertiary-fixed-dim": "#c8c6c2", "surface": "#131316", "surface-dim": "#131316", "on-tertiary-container": "#2a2a27", "on-surface-variant": "#dcc1b8", "outline": "#a48b83", "surface-container-low": "#1b1b1e", "secondary": "#d8c598", "error": "#ffb4ab", "surface-container": "#1f1f22", "surface-variant": "#353438", "primary-container": "#dd734b", "inverse-on-surface": "#303033", "on-primary": "#5b1a00", "background": "#131316", "on-secondary": "#3b2f0e", "on-secondary-fixed-variant": "#534523", "primary-fixed-dim": "#ffb59b", "tertiary-fixed": "#e5e2dd", "on-primary-fixed": "#380d00", "on-background": "#e4e1e6", "on-tertiary": "#31302d", "tertiary-container": "#92918c", "secondary-fixed": "#f5e1b2", "primary": "#ffb59b", "inverse-surface": "#e4e1e6", "error-container": "#93000a", "on-surface": "#e4e1e6", "surface-container-lowest": "#0e0e11", "inverse-primary": "#9d431f", "secondary-fixed-dim": "#d8c598", "on-secondary-container": "#cab78b", "on-tertiary-fixed-variant": "#474743", "on-error-container": "#ffdad6", "surface-container-highest": "#353438", "on-primary-fixed-variant": "#7e2c08", "on-secondary-fixed": "#241a00", "tertiary": "#c8c6c2", "surface-bright": "#39393c", "secondary-container": "#554825", "on-primary-container": "#501600", "outline-variant": "#56423c", "on-error": "#690005", "surface-tint": "#ffb59b", "on-tertiary-fixed": "#1c1c19", "primary-fixed": "#ffdbcf" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-mobile": "1.25rem", "space-xl": "3rem", "space-sm": "0.5rem", "space-lg": "1.75rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "margin": "4rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "price-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-xl": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "display-hero-mobile": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-sm": ["Playfair Display"], "display-hero": ["Playfair Display"], "headline-xl": ["Playfair Display"] }, "fontSize": { "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "price-lg": ["20px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "body-xl": ["18px", { "lineHeight": "28px", "fontWeight": "300" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }], "display-hero-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-xl": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "400" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_12px_36px_-4px_rgba(0,0,0,0.5)] transition-all duration-300 border-b border-surface-container-high/60"><div class="h-20 max-w-[1360px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 group focus:outline-none" data-path="story" href="#"><img alt="Artisanal Pizzeria Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_qS1kseZRBi1jJw_ZokD5ody2NJcbeULYbm-oLFU2s3SUtcR6tA6wfbYeCpN9v6FWVg5G9wUu-8uEi8_K0erCzjKn_RHf7egfFTboRtXQGx5F9wS4J62dE8GDqEx29mbXyVBI526ayenSy9o7XJbx_as6b45f-On6H3ZmDTuXjKw5nrVZUCHgL4Hq_lJjKfoBG6ZmXoniAx_qY-ssmEZfxtlc1kjLd-L6eSQyNSM1jtlo9tTRWKgJ"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface group-hover:text-primary transition-colors">L'Artigiano</span><span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Homemade Pizza &amp; Delivery</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="uppercase tracking-wider transition-colors py-1 text-primary font-semibold" data-path="delivery-takeaway" href="#delivery-section">Delivery &amp; Takeaway</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="homemade-menu" href="#menu-catalog">Homemade Menu</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="combos" href="#delivery-combos">Family Sets</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="track-order" href="#delivery-guarantee">Track Order</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="story" href="#">Story</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="reserve-table" href="#">Bottega Tables</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><a class="hidden sm:flex items-center gap-2 px-3 py-2 rounded text-on-surface-variant hover:text-secondary hover:bg-surface-container transition-all text-body-sm font-body-sm" href="tel:+6627129845"><span class="material-symbols-outlined text-[18px] text-secondary">delivery_dining</span><span class="font-label-caps tracking-wider">Hotline: 02 712 9845</span></a><a class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface group shadow-[0_4px_16px_-2px_rgba(0,0,0,0.3)] border border-outline-variant/30" data-path="delivery-cart" href="#order-summary-box"><span class="material-symbols-outlined text-[18px] text-primary">shopping_bag</span><span class="font-label-caps uppercase text-secondary font-semibold hidden md:inline">ตะกร้าเดลิเวอรี</span><span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-caps text-[11px] font-bold" id="header-cart-badge">0 ถาด</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(194,94,56,0.35)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Delivery Hero & Address Check Section -->
+<section class="relative w-full overflow-hidden bg-surface py-space-xl md:py-margin" id="delivery-section">
+<div class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-primary/10 rounded-full blur-[140px]"></div>
+<div class="pointer-events-none absolute bottom-0 right-10 w-[550px] h-[450px] bg-secondary/5 rounded-full blur-[120px]"></div>
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin relative z-10">
+<!-- Headline & Delivery Promise Header -->
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-space-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high shadow-sm mb-space-sm border border-secondary/20">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Live Wood-Fired Oven Delivery · Bangkok</span>
+</div>
+<h1 class="font-display-hero text-headline-xl md:text-display-hero text-on-surface tracking-tight leading-tight mb-space-sm">
+          Artisanal Homemade Pizza Delivery
+        </h1>
+<p class="font-headline-sm text-headline-sm text-secondary-fixed-dim font-light italic mb-space-sm">
+          อบสดใหม่ส่งตรงถึงบ้านคุณด้วยความร้อนจากเตาฟืน 450°C
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl font-light mb-space-md">
+          สัมผัสรสชาติพิซซ่าโฮมเมดแบบฉบับเนเปิลส์แท้ อบสดใหม่เต็มถาด 12 นิ้ว และ 14 นิ้ว บรรจุในกล่องเก็บอุณหภูมิพิเศษ Thermal Insulated Box ให้ขอบฟูหนานุ่ม หอมกลิ่นฟืนธรรมชาติ กรอบนอกนุ่มในเหมือนทานสดหน้าเตา
+        </p>
+<!-- Address Input Bar & Estimation Widget -->
+<div class="w-full max-w-2xl rounded-xl bg-surface-container-low border border-outline-variant/40 shadow-xl overflow-hidden flex flex-col"><div class="grid grid-cols-2 p-1.5 bg-surface-container-lowest border-b border-outline-variant/20 gap-1"><button type="button" id="hero-tab-delivery" class="flex items-center justify-center gap-2 py-2 px-3 rounded font-label-md font-semibold text-label-md transition-all bg-surface-container-high text-primary shadow-sm"><span class="material-symbols-outlined text-[18px]">delivery_dining</span><span class="">จัดส่งเดลิเวอรี (Delivery)</span></button><button type="button" id="hero-tab-pickup" class="flex items-center justify-center gap-2 py-2 px-3 rounded font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container"><span class="material-symbols-outlined text-[18px]">storefront</span><span class="">รับที่ร้าน (Self-Pickup / Takeaway)</span><span class="text-[10px] bg-secondary/20 text-secondary-fixed px-1.5 py-0.5 rounded font-bold uppercase hidden sm:inline">เร็ว 15 นาที</span></button></div><div class="p-2 flex flex-col sm:flex-row items-center gap-2" id="hero-delivery-input-group"><div class="flex items-center gap-2 px-3 py-2 w-full text-on-surface"><span class="material-symbols-outlined text-primary text-[22px] shrink-0">pin_drop</span><input class="w-full bg-transparent border-0 text-on-surface placeholder:text-outline focus:ring-0 text-body-md font-body-md" id="delivery-address-input" placeholder="ใส่ที่อยู่จัดส่งของคุณ (เช่น คอนโด/ซอย สุขุมวิท, ทองหล่อ, สาทร)" type="text" value="ซอยสุขุมวิท 49, คลองตันเหนือ, วัฒนา, กรุงเทพฯ"></div><div class="flex items-center gap-2 shrink-0 w-full sm:w-auto"><div class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container text-secondary text-label-caps whitespace-nowrap"><span class="material-symbols-outlined text-[18px] text-secondary">timer</span><span class="">จัดส่ง 30-45 นาที</span></div><button class="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md uppercase tracking-wider font-semibold transition-all shadow-md flex items-center justify-center gap-1.5 shrink-0" type="button"><span class="">ตรวจสอบ</span></button></div></div><div class="p-3 hidden sm:flex-row items-center justify-between gap-3 bg-surface-container/60 border-t border-outline-variant/20" id="hero-pickup-info-banner"><div class="flex items-center gap-3 min-w-0"><div class="w-9 h-9 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary shrink-0"><span class="material-symbols-outlined text-[20px]">storefront</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-2"><span class="font-label-md font-semibold text-on-surface truncate">สาขา Bottega Thonglor (สุขุมวิท 55 ซอย 13)</span><span class="text-[10px] px-2 py-0.5 rounded bg-primary/20 text-primary font-bold uppercase shrink-0">เตาฟืนสด</span></div><span class="text-body-sm text-secondary-fixed-dim font-light truncate">เปิดรับสินค้า 11:00 - 22:30 น. · ช่องรับด่วน Express Pickup Lane</span></div></div><div class="flex items-center gap-2 shrink-0"><div class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container text-primary font-label-caps whitespace-nowrap"><span class="material-symbols-outlined text-[16px]">schedule</span><span class="">รับได้ใน 15-20 นาที</span></div><button class="px-4 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-fixed font-label-md text-label-md font-semibold transition-all shadow-sm" type="button"><span class="">เลือกเวลารับ</span></button></div></div></div>
+</div>
+<!-- Hero Stage Split: Hero Featured Whole Pizza in Delivery Presentation -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 flex flex-col items-center">
+<div class="relative w-full max-w-[620px] aspect-square flex items-center justify-center p-space-md rounded-2xl bg-surface-container-lowest shadow-[0_24px_64px_-16px_rgba(0,0,0,0.8)] border border-outline-variant/30 group">
+<div class="absolute inset-8 rounded-full bg-gradient-to-tr from-primary/25 via-secondary/10 to-transparent blur-3xl pointer-events-none"></div>
+<!-- Whole Pizza Image Featured (IMAGE_6 whole artisanal pizza in kraft delivery box) -->
+<div class="relative z-10 w-[94%] h-[94%] overflow-hidden rounded-xl flex items-center justify-center">
+<img alt="Top-down appetizing gourmet homemade artisanal whole round pizza in rustic kraft delivery craft box" class="w-full h-full object-cover object-center transition-all duration-700 ease-out transform group-hover:scale-105" id="hero-whole-pizza-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxlHC1Gjg0I-pf88fiEGdZvdVkyhPmTAv4n7www9d2vl0Pr1q-xFSzwAw7rz0IZ_wJvfX9-LdR5VEy7esj_-_a2Cu3dbiTja69sdza8x55hIUK3CZNZSdIRzvAOaSR7uXViIM6ZgqtTgzOJ3cx1qA0Qsw5Kt8wQrL-RzAuV0IArpxJ9oc79vVD7t1wl4PPJbhxGriqM6r__DrUa-6oqvz5vs4jIocSWn9l5C_pbzf3DrVc9VERp8X9">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent pointer-events-none"></div>
+</div>
+<!-- Badges -->
+<div class="absolute top-6 left-6 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container/90 backdrop-blur-md shadow-md border border-outline-variant/30">
+<span class="material-symbols-outlined text-[16px] text-primary">local_fire_department</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">เตาฟืน 450°C สดใหม่</span>
+</div>
+<div class="absolute top-6 right-6 z-20 flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-semibold shadow-md">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">โฮมเมด อบใหม่ทั้งถาด (12 นิ้ว)</span>
+</div>
+<!-- Bottom Overlay Info -->
+<div class="absolute bottom-6 left-6 right-6 z-20 p-space-md rounded-xl bg-surface-container/95 backdrop-blur-xl shadow-xl flex items-center justify-between border border-outline-variant/30">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Signature Homemade Pie · Best Seller</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Prosciutto 24 Mesi &amp; Stracciatella</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">พาร์มาแฮมบ่ม 24 เดือน, บูร์ราต้าสตราชาเตลลาสด, ร็อกเก็ตป่า และบัลซามิก</span>
+</div>
+<div class="flex flex-col items-end pl-4">
+<span class="font-label-caps text-label-caps text-outline uppercase">ราคาต่อ 1 ถาด (12")</span>
+<span class="font-price-lg text-headline-sm text-primary font-semibold">฿690</span>
+</div>
+</div>
+</div>
+<!-- Delivery Assurance Ribbon below Hero -->
+<div class="mt-space-md w-full max-w-[620px] p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between gap-space-sm border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">thermal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Thermal Box Protected Delivery</span>
+<span class="font-body-sm text-body-sm text-on-surface">รับประกันอุณหภูมิความร้อนและขอบฟูกรอบถึงหน้าประตู</span>
+</div>
+</div>
+<span class="font-label-caps text-[11px] text-primary bg-primary/10 px-2 py-1 rounded font-semibold whitespace-nowrap">อบสดตามออเดอร์</span>
+</div>
+</div>
+<!-- Right Side: Delivery Order Staging & Active Tray Cart Drawer -->
+<div class="lg:col-span-5 flex flex-col gap-space-md" id="order-summary-box">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-semibold">Carrello Consegna a Domicilio</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">ตะกร้าเดลิเวอรีของคุณ</h2>
+</div>
+<span class="font-label-caps text-label-caps text-primary bg-primary/10 px-3 py-1 rounded-full font-semibold" id="cart-item-count-text">2 ถาดในตะกร้า</span>
+</div>
+<!-- Delivery Option Toggle -->
+<div class="grid grid-cols-2 gap-2 p-1 bg-surface-container-lowest rounded-lg border border-outline-variant/20" id="cart-fulfillment-toggle"><button class="flex flex-col sm:flex-row items-center justify-center gap-1.5 py-2 px-2.5 rounded bg-surface-container-high text-primary font-label-md font-semibold text-label-md shadow-sm border border-primary/30 transition-all" id="cart-btn-delivery" type="button"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px]">delivery_dining</span><span class="">จัดส่งถึงบ้าน</span></div></button><button class="flex flex-col sm:flex-row items-center justify-center gap-1.5 py-2 px-2.5 rounded hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-colors relative group" id="cart-btn-takeaway" type="button"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">storefront</span><span class="">รับเองหน้าร้าน</span></div><span class="text-[9px] uppercase px-1.5 py-0.5 rounded bg-secondary/20 text-secondary-fixed font-bold">ไวใน 15 นาที</span></button></div>
+<!-- Current Tray Cart Items List -->
+<div class="flex flex-col gap-2.5 max-h-[340px] overflow-y-auto pr-1" id="cart-tray-items">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img alt="Tartufo Nero" class="w-12 h-12 rounded object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg3t2jgCqkCOfCXTT52mY1M446BSi1MR_8V1rz7_9CTg6Vg1HOfJBih7nz7jX3NYQFcIS9pZMWJgoImkZduLO0ZrSdkea_YTZBJZe_-1oaGBo8JlpcfvSmBoRSdq13kCZtO8ZBQlYvXlvNsIkMjhCHZz71roVZP_ADcjh2Zpsa4Sl0MN79jFo3ZauuEWciwSZG10xWZ6_vc12DuhWkelviTQAy4GoCbXIWf9koU6ngPSLdASNMhlUu">
+<div class="flex flex-col min-w-0 truncate">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Tartufo Nero &amp; Funghi Porcini</span>
+<span class="font-label-caps text-[10px] text-secondary uppercase bg-secondary/10 px-1.5 py-0.5 rounded">ถาด 12"</span>
+</div>
+<span class="font-body-sm text-label-caps text-on-surface-variant truncate">เห็ดพอร์ชินี, ทรัฟเฟิลดำ, มอสซาเรลล่าสด</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-price-lg text-price-lg text-primary font-bold">฿650</span>
+<span class="text-label-caps text-on-surface-variant">1 ถาด</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img alt="Prosciutto 24 Mesi" class="w-12 h-12 rounded object-cover shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxlHC1Gjg0I-pf88fiEGdZvdVkyhPmTAv4n7www9d2vl0Pr1q-xFSzwAw7rz0IZ_wJvfX9-LdR5VEy7esj_-_a2Cu3dbiTja69sdza8x55hIUK3CZNZSdIRzvAOaSR7uXViIM6ZgqtTgzOJ3cx1qA0Qsw5Kt8wQrL-RzAuV0IArpxJ9oc79vVD7t1wl4PPJbhxGriqM6r__DrUa-6oqvz5vs4jIocSWn9l5C_pbzf3DrVc9VERp8X9">
+<div class="flex flex-col min-w-0 truncate">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Prosciutto 24 Mesi &amp; Stracciatella</span>
+<span class="font-label-caps text-[10px] text-secondary uppercase bg-secondary/10 px-1.5 py-0.5 rounded">ถาด 12"</span>
+</div>
+<span class="font-body-sm text-label-caps text-on-surface-variant truncate">พาร์มาแฮม 24 เดือน, บูร์ราต้า, ร็อกเก็ต</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-price-lg text-price-lg text-primary font-bold">฿690</span>
+<span class="text-label-caps text-on-surface-variant">1 ถาด</span>
+</div>
+</div>
+</div>
+<!-- Thermal Box Package Note -->
+<div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/20 flex items-center gap-2.5 text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">inventory_2</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[11px] text-secondary font-semibold uppercase">ฟรี บรรจุภัณฑ์กล่องรักษาความร้อน</span>
+<span class="text-[12px] text-on-surface-variant">แถมฟรี ซิกเนเจอร์ชิลลี่ออยล์และออริกาโนป่าอิตาลีในทุกออเดอร์</span>
+</div>
+</div><div class="p-2.5 rounded-lg bg-surface-container border border-secondary/30 flex items-center justify-between gap-2 text-body-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px] shrink-0">countertops</span><div class="flex flex-col"><span class="font-label-caps text-[11px] text-secondary font-semibold uppercase">พร้อมรับที่เคาน์เตอร์เตาฟืน สุขุมวิท 55</span><span class="text-[11px] text-on-surface-variant">รับทันทีไม่ต้องรอคิว หรือเลือกเวลาล่วงหน้าได้</span></div></div><span class="text-primary text-label-caps font-semibold whitespace-nowrap text-[11px]">ประหยัดค่าส่ง 100%</span></div>
+<!-- Total & Order Button -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/30 shadow-lg flex flex-col gap-3">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">ค่าพิซซ่ารวม (2 ถาด)</span>
+<span class="text-on-surface font-semibold" id="cart-base-total">฿1,340</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant">ค่าจัดส่งด่วนพิเศษ (กรุงเทพฯ โซน 1)</span>
+<span class="text-secondary font-semibold">ฟรี (สั่งครบ ฿1,000)</span>
+</div>
+<div class="border-t border-outline-variant/30 pt-2 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-outline block">ยอดรวมทั้งสิ้น</span>
+<span class="font-price-lg text-headline-sm text-primary font-bold" id="cart-grand-total">฿1,340</span>
+</div>
+<div class="flex flex-col gap-1.5 shrink-0"><button class="px-space-md h-11 rounded bg-primary-container hover:bg-inverse-primary text-on-primary font-label-md uppercase tracking-wider font-semibold transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2" id="checkout-btn" type="button"><span class="material-symbols-outlined text-[18px]">delivery_dining</span><span class="">ดำเนินการสั่งเดลิเวอรี</span></button><button class="px-space-md h-9 rounded bg-surface-container-high hover:bg-surface-container-highest text-secondary border border-secondary/30 font-label-caps uppercase tracking-wider font-semibold transition-all flex items-center justify-center gap-1.5 text-[11px]" id="checkout-pickup-btn" type="button"><span class="material-symbols-outlined text-[16px]">storefront</span><span class="">สั่งรับที่ร้าน (Self-Pickup)</span></button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Catalog: Artisanal Homemade Pizza รายถาด -->
+<section class="w-full bg-surface-container-lowest py-space-xl" id="menu-catalog">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high mb-2">
+<span class="material-symbols-outlined text-secondary text-[16px]">local_pizza</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold tracking-wider">La Nostra Carta delle Pizze Intere</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">เมนูพิซซ่าโฮมเมดเตาฟืน (รายถาด)</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">
+          พิซซ่าโฮมเมดแท้สไตล์เนเปิลส์ อบสดใหม่ทั้งถาดตามสั่งด้วยแป้งซาวโดว์หมักธรรมชาติ 48 ชม. เลือกได้ทั้งขนาดถาดกลาง 12 นิ้ว (แชร์ 2-3 ท่าน) และถาดใหญ่ 14 นิ้ว (แชร์ 4-5 ท่าน)
+        </p>
+</div>
+<!-- Pizza Grid (Whole Trays) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Item 1: Tartufo Nero & Funghi Porcini -->
+<div class="group rounded-xl bg-surface-container-low border border-outline-variant/30 overflow-hidden shadow-md flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+<div>
+<div class="relative aspect-square w-full overflow-hidden bg-surface-container-lowest">
+<img alt="Tartufo Nero &amp; Funghi Porcini whole artisanal pizza" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg3t2jgCqkCOfCXTT52mY1M446BSi1MR_8V1rz7_9CTg6Vg1HOfJBih7nz7jX3NYQFcIS9pZMWJgoImkZduLO0ZrSdkea_YTZBJZe_-1oaGBo8JlpcfvSmBoRSdq13kCZtO8ZBQlYvXlvNsIkMjhCHZz71roVZP_ADcjh2Zpsa4Sl0MN79jFo3ZauuEWciwSZG10xWZ6_vc12DuhWkelviTQAy4GoCbXIWf9koU6ngPSLdASNMhlUu">
+<div class="absolute top-3 left-3 bg-primary-container text-on-primary font-label-caps text-[10px] font-bold uppercase px-2.5 py-1 rounded-full shadow-md">
+                Chef's Signature
+              </div>
+<div class="absolute bottom-3 right-3 bg-surface-container/90 backdrop-blur-md px-2.5 py-1 rounded text-secondary font-label-caps text-label-caps">
+                ถาดโฮมเมดเตาฟืน
+              </div>
+</div>
+<div class="p-space-md flex flex-col">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tartufo Nero &amp; Porcini</h3>
+</div>
+<span class="font-body-sm text-label-caps text-secondary mb-2">ทรัฟเฟิลดำสด &amp; เห็ดพอร์ชินีภูเขา</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+                ครีมทรัฟเฟิลดำสด เห็ดพอร์ชินีย่างเตา มอสซาเรลล่า ฟิออร์ ดิ ลัตเต้ และน้ำมันทรัฟเฟิลขาวสกัดเย็นจากอุมเบรีย
+              </p>
+<!-- Size Selector -->
+<div class="mt-space-sm pt-space-xs border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">ขนาดถาด:</span>
+<div class="flex gap-1.5 size-selector" data-base-price="650">
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-primary-container text-on-primary font-semibold" data-size="12" data-surcharge="0" type="button">12 นิ้ว</button>
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-surface-container text-on-surface-variant hover:text-on-surface" data-size="14" data-surcharge="150" type="button">14 นิ้ว (+150)</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-outline block">ราคาเริ่มต้น</span>
+<span class="font-price-lg text-price-lg text-primary font-bold tray-price-display">฿650 / ถาด</span>
+</div>
+<button class="add-tray-btn px-3.5 py-2 rounded bg-primary-container hover:bg-inverse-primary text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm" data-name="Tartufo Nero &amp; Funghi Porcini" data-price="650" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">ใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Prosciutto 24 Mesi & Stracciatella -->
+<div class="group rounded-xl bg-surface-container-low border border-outline-variant/30 overflow-hidden shadow-md flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+<div>
+<div class="relative aspect-square w-full overflow-hidden bg-surface-container-lowest">
+<img alt="Prosciutto 24 Mesi &amp; Stracciatella whole round artisanal pizza" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxlHC1Gjg0I-pf88fiEGdZvdVkyhPmTAv4n7www9d2vl0Pr1q-xFSzwAw7rz0IZ_wJvfX9-LdR5VEy7esj_-_a2Cu3dbiTja69sdza8x55hIUK3CZNZSdIRzvAOaSR7uXViIM6ZgqtTgzOJ3cx1qA0Qsw5Kt8wQrL-RzAuV0IArpxJ9oc79vVD7t1wl4PPJbhxGriqM6r__DrUa-6oqvz5vs4jIocSWn9l5C_pbzf3DrVc9VERp8X9">
+<div class="absolute top-3 left-3 bg-secondary-container text-on-secondary-container font-label-caps text-[10px] font-bold uppercase px-2.5 py-1 rounded-full shadow-md">
+                Parma Riserva
+              </div>
+<div class="absolute bottom-3 right-3 bg-surface-container/90 backdrop-blur-md px-2.5 py-1 rounded text-secondary font-label-caps text-label-caps">
+                ถาดโฮมเมดเตาฟืน
+              </div>
+</div>
+<div class="p-space-md flex flex-col">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Prosciutto &amp; Stracciatella</h3>
+</div>
+<span class="font-body-sm text-label-caps text-secondary mb-2">พาร์มาแฮม 24 เดือน &amp; ชีสสตราชาเตลลา</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+                พาร์มาแฮมสไลซ์บางบ่ม 24 เดือน ชีสสตราชาเตลลาริชเนียนนุ่ม ร็อกเก็ตป่าสด และบัลซามิกเกรดบ่มโมเดนา
+              </p>
+<!-- Size Selector -->
+<div class="mt-space-sm pt-space-xs border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">ขนาดถาด:</span>
+<div class="flex gap-1.5 size-selector" data-base-price="690">
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-primary-container text-on-primary font-semibold" data-size="12" data-surcharge="0" type="button">12 นิ้ว</button>
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-surface-container text-on-surface-variant hover:text-on-surface" data-size="14" data-surcharge="150" type="button">14 นิ้ว (+150)</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-outline block">ราคาเริ่มต้น</span>
+<span class="font-price-lg text-price-lg text-primary font-bold tray-price-display">฿690 / ถาด</span>
+</div>
+<button class="add-tray-btn px-3.5 py-2 rounded bg-primary-container hover:bg-inverse-primary text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm" data-name="Prosciutto 24 Mesi &amp; Stracciatella" data-price="690" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">ใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Margherita DOP Rustica -->
+<div class="group rounded-xl bg-surface-container-low border border-outline-variant/30 overflow-hidden shadow-md flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+<div>
+<div class="relative aspect-square w-full overflow-hidden bg-surface-container-lowest">
+<img alt="Margherita DOP Rustica whole homemade artisanal pizza" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7AbUhLvFogOyjmPosZ9fTkOAvrAwFMocSrUM2810lokPVSfneFd7LmLzWlREQ1XQhbLahTcuoOIXPf5zsbIS7FWcxCOg4LkJ7xGp_mbd1bum0BuFn2o_Vd9YSOABYPwfXDGTTkUvlf5jCbOzv5PEQ21YHDwIrkiRvb39CFe4ut5UYAEA8nd22_We9s6DDJUIQCDtz4ycx2lUNArEwSvUDdfPWpwOWY-nVBGHnBqSC8ytHYlhj9oOr">
+<div class="absolute top-3 left-3 bg-surface-container-high text-primary font-label-caps text-[10px] font-bold uppercase px-2.5 py-1 rounded-full shadow-md border border-primary/30">
+                100% Certified DOP
+              </div>
+<div class="absolute bottom-3 right-3 bg-surface-container/90 backdrop-blur-md px-2.5 py-1 rounded text-secondary font-label-caps text-label-caps">
+                ถาดโฮมเมดเตาฟืน
+              </div>
+</div>
+<div class="p-space-md flex flex-col">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Margherita DOP Rustica</h3>
+</div>
+<span class="font-body-sm text-label-caps text-secondary mb-2">มาร์เกอริต้าคลาสสิกเนเปิลส์</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+                มะเขือเทศ San Marzano DOP จากเชิงเขาเวซูเวียส มอสซาเรลล่านมควายกัมปาเนีย โหระพาอิตาเลียน และน้ำมันมะกอกสกัดเย็น
+              </p>
+<!-- Size Selector -->
+<div class="mt-space-sm pt-space-xs border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">ขนาดถาด:</span>
+<div class="flex gap-1.5 size-selector" data-base-price="450">
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-primary-container text-on-primary font-semibold" data-size="12" data-surcharge="0" type="button">12 นิ้ว</button>
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-surface-container text-on-surface-variant hover:text-on-surface" data-size="14" data-surcharge="140" type="button">14 นิ้ว (+140)</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-outline block">ราคาเริ่มต้น</span>
+<span class="font-price-lg text-price-lg text-primary font-bold tray-price-display">฿450 / ถาด</span>
+</div>
+<button class="add-tray-btn px-3.5 py-2 rounded bg-primary-container hover:bg-inverse-primary text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm" data-name="Margherita DOP Rustica" data-price="450" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">ใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+<!-- Item 4: 4 Formaggi & Miele Castagno -->
+<div class="group rounded-xl bg-surface-container-low border border-outline-variant/30 overflow-hidden shadow-md flex flex-col justify-between hover:border-primary/50 transition-all duration-300">
+<div>
+<div class="relative aspect-square w-full overflow-hidden bg-surface-container-lowest">
+<img alt="4 Formaggi whole artisanal homemade pizza" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_GDJoT7EQALGiQ5rahXNcpmCUmNK6Hf2vlSrGvxNEm77wnG0YJVBXnYtamxlL9mEW6pMmJ8p4sO3Dm8WLXcY_rp_9yyqRjjV_qcNr41WQS7aMONCHzvBAYKqK3Dvkg4jTZk9W1OKkR51gs5yVXDcUtSy9ioz0tPydcLA4JqsVWPTlrOmraTosDSpjB03q30EJnd45Nif3NRGTsydQI982NsbsY_pZkY4QNE45CdfBxgZEImRbP1Yz">
+<div class="absolute top-3 left-3 bg-secondary/20 text-secondary-fixed font-label-caps text-[10px] font-bold uppercase px-2.5 py-1 rounded-full shadow-md">
+                Artisanal Cheese
+              </div>
+<div class="absolute bottom-3 right-3 bg-surface-container/90 backdrop-blur-md px-2.5 py-1 rounded text-secondary font-label-caps text-label-caps">
+                ถาดโฮมเมดเตาฟืน
+              </div>
+</div>
+<div class="p-space-md flex flex-col">
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">4 Formaggi &amp; Miele</h3>
+</div>
+<span class="font-body-sm text-label-caps text-secondary mb-2">ชีสพรีเมียม 4 ชนิด &amp; น้ำผึ้งเกาลัด</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed line-clamp-2">
+                กอร์กอนโซลาบลูชีส, ฟอนตินา, มอสซาเรลล่า และพาร์มิจาโน 36 เดือน โรยวอลนัทคั่วและน้ำผึ้งเกาลัดป่าแคว้นทัสคานี
+              </p>
+<!-- Size Selector -->
+<div class="mt-space-sm pt-space-xs border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-outline uppercase">ขนาดถาด:</span>
+<div class="flex gap-1.5 size-selector" data-base-price="590">
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-primary-container text-on-primary font-semibold" data-size="12" data-surcharge="0" type="button">12 นิ้ว</button>
+<button class="size-btn px-2.5 py-1 text-label-caps rounded bg-surface-container text-on-surface-variant hover:text-on-surface" data-size="14" data-surcharge="150" type="button">14 นิ้ว (+150)</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-outline block">ราคาเริ่มต้น</span>
+<span class="font-price-lg text-price-lg text-primary font-bold tray-price-display">฿590 / ถาด</span>
+</div>
+<button class="add-tray-btn px-3.5 py-2 rounded bg-primary-container hover:bg-inverse-primary text-on-primary font-label-md text-label-md font-semibold transition-all flex items-center gap-1.5 shadow-sm" data-name="4 Formaggi &amp; Miele Castagno" data-price="590" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span class="">ใส่ตะกร้า</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Homemade Delivery Combos / Family Sets Section -->
+<section class="w-full bg-surface py-space-xl" id="delivery-combos">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Offerte Speciali &amp; Confezioni Famiglia</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1 mb-2">Homemade Delivery Combos &amp; Family Sets</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          เซ็ตถาดรวมสุดคุ้ม อบสดใหม่พร้อมเครื่องเคียงโฮมเมดและเครื่องดื่มพรีเมียม บรรจุในกล่อง Thermal Insulated Box จัดส่งตรงถึงบ้าน
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg max-w-4xl mx-auto">
+<!-- Combo 1: Duo Feast Set -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-outline-variant/30 shadow-md flex flex-col justify-between hover:bg-surface-container transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Duo Feast Set · 2 ถาด</span>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container text-on-surface">เหมาะสำหรับ 2-3 ท่าน</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Duo Feast Set (เซ็ต 2 ถาดคู่สุดคุ้ม)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              เลือกพิซซ่าโฮมเมด 12 นิ้ว 2 ถาด พร้อมเครื่องเคียงสูตรซิกเนเจอร์และเครื่องดื่มนำเข้า
+            </p>
+<ul class="space-y-2.5 mb-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="">พิซซ่าเตาฟืนโฮมเมด 12 นิ้ว จำนวน 2 ถาด (เลือกหน้าโปรดได้ตามชอบ)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="">ขนมปังกระเทียมซาวโดว์โฮมเมด (Artisanal Sourdough Garlic Bread)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="">San Pellegrino Italian Sparkling Soda 2 กระป๋อง</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="">บรรจุกล่องรักษาอุณหภูมิ Thermal Insulated Box</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/20">
+<div>
+<span class="font-label-caps text-label-caps text-outline block">ราคาเซ็ตพิเศษ (ประหยัด ฿280)</span>
+<span class="font-price-lg text-headline-sm text-primary font-bold">฿1,090</span>
+</div>
+<button class="px-space-md h-11 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md uppercase tracking-wider transition-colors shadow-sm add-combo-btn" data-name="Duo Feast Set" data-price="1090" type="button">
+              เลือกหน้า 2 ถาด
+            </button>
+</div>
+</div>
+<!-- Combo 2: Family Grand Party Set (Highlighted) -->
+<div class="p-space-lg rounded-xl bg-surface-container border border-primary/40 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-primary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold">Family Grand Party · 3 ถาด</span>
+<span class="font-label-caps text-label-caps px-2.5 py-0.5 rounded bg-primary-container text-on-primary font-semibold">Best Value Party</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Family Grand Party Set (เซ็ต 3 ถาดครอบครัว)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              จัดเต็มมื้อสังสรรค์สุดหรูที่บ้าน ด้วยพิซซ่าเตาฟืนพรีเมียม 3 ถาด พร้อมสลัดบูร์ราต้าและดิปปิ้งสูตรพิเศษ
+            </p>
+<ul class="space-y-2.5 mb-space-md font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="">พิซซ่าโฮมเมดพรีเมียม 12 นิ้ว 3 ถาด (รวมทรัฟเฟิลและพาร์มาแฮม)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="">สลัดบูร์ราต้าสดชีสนมควายและมะเขือเทศเชอร์รี่กัมปาเนีย (Burrata Pugliese Salad)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="">ซิกเนเจอร์ดิปปิ้ง 3 ชนิด (Truffle Mayo, Spicy Nduja, Garlic Aioli)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="">ฟรี บริการจัดส่งด่วน Express Delivery ส่งตรงถึงบ้าน</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md flex items-center justify-between border-t border-outline-variant/30">
+<div>
+<span class="font-label-caps text-label-caps text-secondary block">ราคาเซ็ตพิเศษ (ประหยัด ฿550)</span>
+<span class="font-price-lg text-headline-sm text-primary font-bold">฿1,890</span>
+</div>
+<button class="px-space-md h-11 rounded bg-primary-container hover:bg-inverse-primary text-on-primary font-label-md uppercase tracking-wider font-semibold transition-all shadow-md add-combo-btn" data-name="Family Grand Party Set" data-price="1890" type="button">
+              สั่งเซ็ต Grand 3 ถาด
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Delivery Guarantee & Craft Promise -->
+<section class="w-full bg-surface py-space-xl border-t border-outline-variant/20" id="takeaway-experience-section"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin"><div class="p-space-lg md:p-space-xl rounded-2xl bg-surface-container-low border border-secondary/30 shadow-xl relative overflow-hidden"><div class="absolute -top-10 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10"><div class="lg:col-span-7 flex flex-col"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high w-fit mb-space-xs border border-secondary/20"><span class="material-symbols-outlined text-secondary text-[16px]">storefront</span><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold tracking-wider">Artisanal Takeaway &amp; Self-Pickup Experience</span></div><h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">บริการรับหน้าร้าน รับพิซซ่าร้อนๆ ตรงจากเตาฟืน 450°C</h2></div></div></div></div></section><section class="w-full bg-surface py-space-xl border-t border-outline-variant/20" id="takeaway-experience-section"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin"><div class="p-space-lg md:p-space-xl rounded-2xl bg-surface-container-low border border-secondary/30 shadow-xl relative overflow-hidden"><div class="absolute -top-10 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10"><div class="lg:col-span-7 flex flex-col"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high w-fit mb-space-xs border border-secondary/20"><span class="material-symbols-outlined text-secondary text-[16px]">storefront</span><span class="font-label-caps text-label-caps uppercase text-secondary font-semibold tracking-wider">Artisanal Takeaway &amp; Self-Pickup Experience</span></div><h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">บริการรับหน้าร้าน สั่งกลับบ้านร้อนๆ ตรงจากเตาฟืน 450°C</h2><p class="font-body-md text-body-md text-on-surface-variant font-light mb-space-md leading-relaxed">เพลิดเพลินกับพิซซ่าโฮมเมดคุณภาพสูงสุดที่ยกขึ้นจากเตาฟืนสดใหม่ใน 15-20 นาที พร้อมช่องทางรับด่วน Express Pickup Lane ที่สาขา Bottega Thonglor (สุขุมวิท 55 ซอย 13) จอดรับสะดวกโดยไม่ต้องรอคิว</p><div class="grid grid-cols-1 sm:grid-cols-3 gap-3"><div class="p-3 rounded-xl bg-surface-container border border-outline-variant/20 flex flex-col gap-1"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px]">bolt</span><span class="font-label-md font-semibold text-on-surface">พร้อมรับใน 15 นาที</span></div><span class="text-[12px] text-on-surface-variant">จัดคิวอบเตาฟืนแบบ Real-Time รวดเร็วไม่ต้องรอนาน</span></div><div class="p-3 rounded-xl bg-surface-container border border-outline-variant/20 flex flex-col gap-1"><div class="flex items-center gap-2 text-secondary"><span class="material-symbols-outlined text-[20px]">price_check</span><span class="font-label-md font-semibold text-on-surface">ประหยัดค่าจัดส่ง</span></div><span class="text-[12px] text-on-surface-variant">รับส่วนลดเครื่องดื่มโฮมเมด 10% เมื่อสั่งรับหน้าร้าน</span></div><div class="p-3 rounded-xl bg-surface-container border border-outline-variant/20 flex flex-col gap-1"><div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined text-[20px]">directions_car</span><span class="font-label-md font-semibold text-on-surface">Express Curbside</span></div><span class="text-[12px] text-on-surface-variant">บริการส่งถึงรถยนต์หน้าเคาน์เตอร์ Bottega สุขุมวิท 55</span></div></div></div><div class="lg:col-span-5 flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-high border border-outline-variant/30"><div class="flex items-center justify-between pb-2 border-b border-outline-variant/20"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[22px]">location_on</span><span class="font-headline-sm text-[18px] text-on-surface font-semibold">สาขาหลัก Bottega Thonglor</span></div><span class="text-label-caps text-secondary bg-secondary/10 px-2 py-0.5 rounded font-bold uppercase">สุขุมวิท 55</span></div><div class="space-y-1 text-body-sm text-on-surface-variant"><p class="text-on-surface font-semibold">L'Artigiano Bottega &amp; Hearth</p><p class="text-[13px]">เลขที่ 138/1 ซอยทองหล่อ 13 ถนนสุขุมวิท 55 แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพฯ 10110</p><div class="flex items-center gap-4 pt-1 text-[12px] text-secondary"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 11:00 - 22:30 น.</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">local_parking</span> มีที่จอดรถรับด่วน</span></div></div><div class="pt-2 flex items-center gap-2"><a href="tel:+6627129845" class="w-full py-2.5 px-3 rounded bg-surface-container hover:bg-surface text-on-surface font-label-md text-label-md font-semibold text-center transition-colors border border-outline-variant/30 flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span class="">โทรจองเวลารับ</span></a><a href="#menu-catalog" class="w-full py-2.5 px-3 rounded bg-secondary hover:bg-secondary-fixed text-on-secondary font-label-md text-label-md font-semibold text-center transition-all shadow-md flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span class="">สั่งล่วงหน้า</span></a></div></div></div></div></div></section><section class="w-full bg-surface-container-lowest py-space-xl" id="delivery-guarantee">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest font-semibold">Standard di Consegna &amp; Freschezza</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">มาตรฐานการจัดส่ง &amp; คำสัญญาแห่งความสดใหม่</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">
+          เพื่อให้พิซซ่าทุกถาดที่ส่งถึงมือคุณรักษาความสด กรอบ นุ่ม และกลิ่นหอมฟืนเหมือนทานที่หน้าร้านเตาฟืน
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Guarantee 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-outline-variant/30 shadow-sm flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-[28px]">inventory_2</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Thermal Insulated Packaging</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-2">เตาร้อนส่งถึงบ้านในกล่องรักษาอุณหภูมิ</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              บรรจุในกล่อง Thermal Insulated Box สั่งทำพิเศษ มีช่องระบายไอน้ำระดับไมครอน ป้องกันแป้งแฉะ คงความกรอบฟูของขอบพิซซ่าให้ร้อนกรุ่นจนถึงโต๊ะอาหารคุณ
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-2 text-outline font-label-caps border-t border-outline-variant/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">Steam-Vent System</span>
+</div>
+</div>
+<!-- Guarantee 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-outline-variant/30 shadow-sm flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[28px]">schedule</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">48-Hour Biga Fermentation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-2">แป้งซาวโดว์หมักธรรมชาติ 48 ชม.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              สูตรแป้งโฮมเมดสไตล์เนเปิลส์แท้ ใช้ยีสต์ธรรมชาติหมักบ่ม 48 ชั่วโมงเต็ม ย่อยง่าย สบายท้อง ไร้สารกันบูด แป้งนุ่มเหนียวชวนหลงใหลตั้งแต่คำแรกจนถึงขอบถาด
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-2 text-outline font-label-caps border-t border-outline-variant/20">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="">Light, Airy &amp; Easy Digest</span>
+</div>
+</div>
+<!-- Guarantee 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-outline-variant/30 shadow-sm flex flex-col justify-between group hover:bg-surface-container transition-all">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-[28px]">rocket_launch</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-secondary font-semibold">Precision Fast Dispatch</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-2">จัดส่งด่วน 35-45 นาที หรือระบุเวลาล่วงหน้า</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              ออกจากเตาฟืน 450°C แล้วขึ้นรถจัดส่งทันที ครอบคลุมกรุงเทพฯ และปริมณฑล หรือสามารถสั่งจองระบุเวลาส่งล่วงหน้าสำหรับงานปาร์ตี้และการประชุมสำคัญ
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-2 text-outline font-label-caps border-t border-outline-variant/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">Scheduled Pre-Order Available</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Delivery CTA Bar & Coverage Zone Callout -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin">
+<div class="p-space-xl rounded-2xl bg-surface-container-low border border-outline-variant/40 shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high w-fit mb-space-xs border border-secondary/20">
+<span class="material-symbols-outlined text-secondary text-[16px]">map</span>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider font-semibold">Delivery Zone Coverage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">พร้อมส่งความอร่อยเตาฟืนถึงบ้านคุณ</h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light mb-2">
+            บริการจัดส่งครอบคลุมพื้นที่ กรุงเทพฯ และปริมณฑล (สุขุมวิท, ทองหล่อ, เอกมัย, สาทร, สีลม, อารีย์, พระราม 9, บางนา และพื้นที่ใกล้เคียง)
+          </p>
+<div class="flex items-center gap-4 text-label-caps text-secondary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">check</span> สั่งครบ ฿1,000 จัดส่งฟรี</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">check</span> แป้งซาวโดว์อบใหม่ทุกถาด</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0">
+<a class="h-12 px-space-md rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md uppercase tracking-wider flex items-center justify-center gap-2 transition-colors shadow-sm border border-outline-variant/30" href="tel:+6627129845">
+<span class="material-symbols-outlined text-secondary text-[18px]">call</span>
+<span class="">Hotline: 02 712 9845</span>
+</a>
+<a class="h-12 px-space-lg rounded bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md uppercase tracking-wider font-semibold transition-all shadow-[0_12px_36px_-4px_rgba(194,94,56,0.3)] hover:shadow-lg flex items-center justify-center gap-2" href="#menu-catalog">
+<span class="material-symbols-outlined text-[18px]">delivery_dining</span>
+<span class="">สั่งพิซซ่าเดลิเวอรีทันที</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Script for Whole Pizza Tray Selector, Size Toggle & Delivery Cart -->
+<script>
+  (function initDeliveryExperience() {
+    let currentTrayCount = 2;
+    let currentTotal = 1340;
+    
+    const cartBadge = document.getElementById('header-cart-badge');
+    const cartCountText = document.getElementById('cart-item-count-text');
+    const baseTotalEl = document.getElementById('cart-base-total');
+    const grandTotalEl = document.getElementById('cart-grand-total');
+    const cartTrayItems = document.getElementById('cart-tray-items');
+
+    // Handle Size Selection in Pizza Grid
+    const sizeSelectors = document.querySelectorAll('.size-selector');
+    sizeSelectors.forEach(selector => {
+      const basePrice = parseInt(selector.getAttribute('data-base-price') || '500', 10);
+      const parentCard = selector.closest('.group');
+      const priceDisplay = parentCard ? parentCard.querySelector('.tray-price-display') : null;
+      const addBtn = parentCard ? parentCard.querySelector('.add-tray-btn') : null;
+      const buttons = selector.querySelectorAll('.size-btn');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          buttons.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+            b.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+          btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+          const surcharge = parseInt(btn.getAttribute('data-surcharge') || '0', 10);
+          const currentPrice = basePrice + surcharge;
+          const size = btn.getAttribute('data-size');
+
+          if (priceDisplay) {
+            priceDisplay.textContent = '฿' + currentPrice.toLocaleString() + ' / ถาด';
+          }
+          if (addBtn) {
+            addBtn.setAttribute('data-price', currentPrice);
+            addBtn.setAttribute('data-selected-size', size + ' นิ้ว');
+          }
+        });
+      });
+    });
+
+    // Handle Add Tray to Cart Buttons
+    const addTrayBtns = document.querySelectorAll('.add-tray-btn');
+    addTrayBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.getAttribute('data-name') || 'Artisanal Pizza';
+        const price = parseInt(btn.getAttribute('data-price') || '550', 10);
+        const size = btn.getAttribute('data-selected-size') || '12 นิ้ว';
+
+        currentTrayCount += 1;
+        currentTotal += price;
+
+        updateCartUI();
+
+        // Add visual item to cart drawer
+        if (cartTrayItems) {
+          const itemDiv = document.createElement('div');
+          itemDiv.className = 'p-space-sm rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-between gap-space-sm animate-fade-in';
+          itemDiv.innerHTML = `
+            <div class="flex items-center gap-space-sm min-w-0">
+              <div class="w-10 h-10 rounded bg-primary/20 flex items-center justify-center text-primary font-bold shrink-0">
+                <span class="material-symbols-outlined text-[20px]">local_pizza</span>
+              </div>
+              <div class="flex flex-col min-w-0 truncate">
+                <div class="flex items-center gap-2">
+                  <span class="font-label-md text-label-md font-semibold text-on-surface truncate">${name}</span>
+                  <span class="font-label-caps text-[10px] text-secondary uppercase bg-secondary/10 px-1.5 py-0.5 rounded">ถาด ${size}</span>
+                </div>
+                <span class="font-body-sm text-label-caps text-on-surface-variant">อบสดใหม่จากเตาฟืน</span>
+              </div>
+            </div>
+            <div class="flex flex-col items-end shrink-0 pl-2">
+              <span class="font-price-lg text-price-lg text-primary font-bold">฿${price.toLocaleString()}</span>
+              <span class="text-label-caps text-on-surface-variant">1 ถาด</span>
+            </div>
+          `;
+          cartTrayItems.prepend(itemDiv);
+        }
+
+        // Button feedback
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>เพิ่มแล้ว!</span>';
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('bg-secondary', 'text-on-secondary');
+        }, 1200);
+      });
+    });
+
+    // Handle Combo Sets Add
+    const addComboBtns = document.querySelectorAll('.add-combo-btn');
+    addComboBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.getAttribute('data-name') || 'Combo Set';
+        const price = parseInt(btn.getAttribute('data-price') || '1090', 10);
+        const trayAdd = name.includes('3 ถาด') ? 3 : 2;
+
+        currentTrayCount += trayAdd;
+        currentTotal += price;
+
+        updateCartUI();
+
+        if (cartTrayItems) {
+          const itemDiv = document.createElement('div');
+          itemDiv.className = 'p-space-sm rounded-lg bg-surface-container-high border border-primary/40 flex items-center justify-between gap-space-sm';
+          itemDiv.innerHTML = `
+            <div class="flex items-center gap-space-sm min-w-0">
+              <div class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center font-bold shrink-0">
+                <span class="material-symbols-outlined text-[20px]">takeout_dining</span>
+              </div>
+              <div class="flex flex-col min-w-0 truncate">
+                <span class="font-label-md text-label-md font-semibold text-primary truncate">${name}</span>
+                <span class="font-body-sm text-label-caps text-on-surface-variant">ชุดเซ็ตสุดคุ้ม (${trayAdd} ถาด + เครื่องเคียง)</span>
+              </div>
+            </div>
+            <div class="flex flex-col items-end shrink-0 pl-2">
+              <span class="font-price-lg text-price-lg text-primary font-bold">฿${price.toLocaleString()}</span>
+              <span class="text-label-caps text-secondary font-semibold">1 เซ็ต</span>
+            </div>
+          `;
+          cartTrayItems.prepend(itemDiv);
+        }
+
+        btn.textContent = 'เพิ่มในตะกร้าแล้ว';
+        setTimeout(() => {
+          btn.textContent = name.includes('3 ถาด') ? 'สั่งเซ็ต Grand 3 ถาด' : 'เลือกหน้า 2 ถาด';
+        }, 1200);
+      });
+    });
+
+    function updateCartUI() {
+      if (cartBadge) cartBadge.textContent = `${currentTrayCount} ถาด`;
+      if (cartCountText) cartCountText.textContent = `${currentTrayCount} ถาดในตะกร้า`;
+      if (baseTotalEl) baseTotalEl.textContent = '฿' + currentTotal.toLocaleString();
+      if (grandTotalEl) grandTotalEl.textContent = '฿' + currentTotal.toLocaleString();
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant pt-space-xl pb-margin border-t border-outline-variant/20"><div class="max-w-[1360px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex flex-col"><span class="font-headline-md text-headline-md text-on-surface tracking-tight">L'Artigiano</span><span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mt-0.5">Homemade Pizza &amp; Delivery</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-2">สัมผัสประสบการณ์พิซซ่าเตาฟืนโฮมเมดสไตล์เนเปิลส์แท้ อบสดใหม่เต็มถาด 12 นิ้ว และ 14 นิ้ว ส่งตรงความกรอบฟูร้อนถึงบ้านคุณด้วยกล่องรักษาความร้อนพิเศษในกรุงเทพฯ</p><div class="flex items-center gap-2 mt-2"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Wood-Fired Oven Live · 450°C</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Craft &amp; Ingredient Integrity</span><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">verified</span><span class="">แป้งซาวโดว์หมักบ่มธรรมชาติ 48 ชม.</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">local_fire_department</span><span class="">เตาฟืนหินภูเขาไฟธรรมชาติ 450°C</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">inventory_2</span><span class="">กล่อง Thermal Insulated รักษาความกรอบ</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">eco</span><span class="">วัตถุดิบนำเข้าแท้ 100% Certified DOP</span></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Delivery Hours (เวลาจัดส่ง)</span><div class="space-y-space-xs font-body-sm text-body-sm"><div class="flex justify-between items-baseline"><span class="text-on-surface">จันทร์ – ศุกร์:</span><span class="text-secondary-fixed-dim">11:00 – 22:30</span></div><div class="flex justify-between items-baseline"><span class="text-on-surface">เสาร์ – อาทิตย์:</span><span class="text-secondary-fixed-dim">11:00 – 23:00</span></div><div class="flex justify-between items-baseline"><span class="text-outline">สั่งล่วงหน้า (Pre-Order):</span><span class="text-secondary">เปิดรับตลอด 24 ชม.</span></div></div><p class="font-body-sm text-body-sm text-primary mt-1">รับออเดอร์ถาดสุดท้ายก่อนปิดบริการ 45 นาที</p></div><div class="flex flex-col gap-space-sm"><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-semibold">Delivery Hub &amp; Contact</span><div class="space-y-space-xs font-body-sm text-body-sm"><p class="text-on-surface">L'Artigiano Bottega &amp; Hearth</p><p class="">ซอยทองหล่อ 13, สุขุมวิท 55, คลองตันเหนือ, วัฒนา, กรุงเทพฯ</p><p class="text-secondary pt-1">พื้นที่จัดส่ง: ทั่วกรุงเทพฯ และปริมณฑล</p></div><div class="flex flex-col gap-1 mt-2"><span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Hotline สั่งพิซซ่าเดลิเวอรี</span><a class="font-price-lg text-price-lg text-primary hover:text-primary-fixed transition-colors" href="tel:+6627129845">02 712 9845</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="mailto:delivery@lartigiano-bangkok.com">delivery@lartigiano-bangkok.com</a></div></div></div><div class="pt-space-md mt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm text-outline border-t border-outline-variant/20"><p class="">© 2025 L'Artigiano Homemade Pizza &amp; Delivery Co., Ltd. สงวนลิขสิทธิ์ทุกประการ.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="delivery-terms" href="#">เงื่อนไขการจัดส่งอาหาร</a><span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span><a class="hover:text-on-surface transition-colors" data-path="thermal-standard" href="#">Thermal Packaging Standard</a><span class="inline-block w-1 h-1 rounded-full bg-outline-variant"></span><a class="hover:text-on-surface transition-colors" data-path="privacy" href="#">นโยบายความเป็นส่วนตัว</a></div></div></div></footer>
+
+</body></html>

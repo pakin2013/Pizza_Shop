@@ -73,37 +73,6 @@
 </div>
 </div>
 </div>
-<!-- Fulfillment Mode Selector Box -->
-<div class="bg-surface-mist/90 backdrop-blur-md p-space-md rounded-2xl shadow-sm border border-slate-200/60 mt-space-xs">
-<span class="font-label-lg text-label-lg text-ocean-deep block mb-space-sm font-bold">เลือกรูปแบบการรับพิซซ่าเตาฟืน:</span>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
-<!-- Delivery Mode Pill -->
-<button class="group flex items-start gap-space-sm p-space-md rounded-xl bg-ocean-deep text-on-primary shadow-md text-left transition-all" id="btn-delivery-mode" type="button">
-<div class="w-10 h-10 rounded-lg bg-on-primary/10 flex items-center justify-center text-on-primary">
-<span class="material-symbols-outlined text-[24px]">delivery_dining</span>
-</div>
-<div class="flex flex-col">
-<div class="flex items-center gap-space-xs">
-<span class="font-label-lg text-label-lg font-bold">จัดส่งเดลิเวอรี (Delivery)</span>
-<span class="text-xs px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">แนะนำ</span>
-</div>
-<span class="font-body-sm text-body-sm text-surface-container-high mt-0.5">30-45 นาที ทั่วเมืองสงขลา · กล่องร้อน</span>
-</div>
-</button>
-<!-- Takeaway Mode Pill -->
-<button class="group flex items-start gap-space-sm p-space-md rounded-xl bg-white hover:bg-surface-container text-black text-left transition-all border border-slate-200" id="btn-takeaway-mode" type="button">
-<div class="w-10 h-10 rounded-lg bg-sand-warm flex items-center justify-center text-black">
-<span class="material-symbols-outlined text-[24px]">storefront</span>
-</div>
-<div class="flex flex-col">
-<div class="flex items-center gap-space-xs">
-<span class="font-label-lg text-label-lg font-bold">รับที่ร้าน (Self-Pickup)</span>
-<span class="text-xs px-2 py-0.5 rounded-full bg-sand-warm text-oven-flame font-semibold">ไว 15 นาที</span>
-</div>
-<span class="font-body-sm text-body-sm text-black mt-0.5">สาขาหลักริมหาด · Express Drive Lane</span>
-</div>
-</button>
-</div>
 <!-- Real-time Status Micro-bar -->
 <div class="mt-space-sm pt-space-xs flex flex-wrap items-center justify-between text-on-surface-variant font-body-sm text-body-sm border-t border-slate-200/50">
 <div class="flex items-center gap-1.5">
@@ -428,22 +397,22 @@
 <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
 </div>
 <div>
-<span class="font-eyebrow-it text-eyebrow-it text-ocean-deep block font-bold">Carrello Consegna</span>
-<h3 class="font-headline-sm text-headline-sm text-ocean-deep font-bold">ตะกร้าเดลิเวอรีของคุณ</h3>
+<span class="font-eyebrow-it text-eyebrow-it text-ocean-deep block font-bold">Songkhla Local Pizza</span>
+<h3 class="font-headline-sm text-headline-sm text-ocean-deep font-bold">ตะกร้าของคุณ</h3>
 </div>
 </div>
 <span id="cart-count-label" class="px-2.5 py-1 rounded-full bg-sand-warm text-oven-flame font-label-md text-label-md font-bold">0 รายการ</span>
 </div>
-<!-- Fulfillment Toggle inside Box -->
-<div class="grid grid-cols-2 p-1 bg-slate-100 rounded-xl text-center text-xs font-semibold">
-<div class="py-1.5 rounded-lg bg-white text-ocean-deep shadow-xs flex items-center justify-center gap-1 font-bold">
-<span class="material-symbols-outlined text-[16px]">delivery_dining</span>
-<span class="">จัดส่งถึงบ้าน</span>
-</div>
-<div class="py-1.5 rounded-lg text-on-surface-variant flex items-center justify-center gap-1 hover:text-on-surface cursor-pointer">
-<span class="material-symbols-outlined text-[16px]">storefront</span>
-<span class="">รับเองหน้าร้าน</span>
-</div>
+<div class="rounded-2xl border border-sky-100 bg-sky-50/70 p-3">
+  <p class="mb-2 text-sm font-bold text-ocean-deep">เลือกรูปแบบการรับพิซซ่าเตาฟืน</p>
+  <div class="grid grid-cols-2 gap-2" role="group" aria-label="เลือกรูปแบบการรับ">
+    <button id="cart-delivery-mode" class="flex items-center justify-center gap-2 rounded-xl bg-ocean-deep px-2 py-3 text-sm font-bold text-on-primary shadow-sm transition" aria-pressed="true" type="button">
+      <span class="material-symbols-outlined text-lg" aria-hidden="true">delivery_dining</span><span>จัดส่งเดลิเวอรี</span>
+    </button>
+    <button id="cart-pickup-mode" class="flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-2 py-3 text-sm font-bold text-black transition hover:bg-slate-50" aria-pressed="false" type="button">
+      <span class="material-symbols-outlined text-lg" aria-hidden="true">storefront</span><span>รับที่ร้าน</span>
+    </button>
+  </div>
 </div>
 <div id="cart-items" class="flex flex-col gap-space-sm divide-y divide-ocean-deep/10"></div>
 <div class="space-y-1.5 pt-space-xs font-body-sm text-body-sm text-on-surface-variant">
@@ -458,8 +427,7 @@
   <button id="cancel-order-button" class="mt-2 w-full py-2 px-space-sm rounded-lg bg-white text-red-700 border border-red-200 hover:bg-red-50 font-label-md text-label-md font-bold" onclick="cancelOrder()" type="button">ยกเลิกคำสั่งซื้อ</button>
 </div>
 <div class="flex flex-col gap-space-xs pt-space-xs">
-  <button class="w-full py-3.5 px-space-md rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md transition-all disabled:opacity-50 disabled:cursor-not-allowed" data-checkout="delivery" onclick="placeOrder('delivery')" type="button"><span class="material-symbols-outlined text-[20px]">delivery_dining</span><span>ยืนยันคำสั่งซื้อ · จัดส่ง</span></button>
-  <button class="w-full py-2.5 px-space-md rounded-xl bg-white hover:bg-slate-50 text-ocean-deep font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 border border-slate-200 transition-all disabled:opacity-50 disabled:cursor-not-allowed" data-checkout="pickup" onclick="placeOrder('pickup')" type="button"><span class="material-symbols-outlined text-[18px]">storefront</span><span>ยืนยันคำสั่งซื้อ · รับที่ร้าน</span></button>
+  <button id="checkout-button" class="w-full py-3.5 px-space-md rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md transition-all disabled:opacity-50 disabled:cursor-not-allowed" data-checkout onclick="placeOrder(fulfillmentMode)" type="button"><span id="checkout-icon" class="material-symbols-outlined text-[20px]">delivery_dining</span><span id="checkout-label">ยืนยันคำสั่งซื้อ · จัดส่ง</span></button>
   <button class="w-full py-2 px-space-md rounded-xl text-on-surface-variant hover:text-red-700 hover:bg-red-50 font-label-md text-label-md font-semibold transition-colors" onclick="clearCart()" type="button">ล้างตะกร้า</button>
 </div><!-- Direct Hotline Card -->
 <div class="bg-gradient-to-r from-ocean-deep to-primary-container p-space-md rounded-2xl text-on-primary shadow-xl flex items-center justify-between border border-white/20">
@@ -625,6 +593,7 @@
     let cartItems = readStorage(CART_STORAGE_KEY, []);
     if (!Array.isArray(cartItems)) cartItems = [];
     let activeOrder = readStorage(ORDER_STORAGE_KEY, null);
+    let fulfillmentMode = 'delivery';
 
     function saveCart() {
       try { localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems)); }
@@ -651,7 +620,7 @@
       if (!itemsHost) return;
       const itemCount = cartItems.reduce((sum, item) => sum + Math.max(0, Number(item.quantity) || 0), 0);
       const subtotal = cartItems.reduce((sum, item) => sum + (Number(item.price) || 0) * (Number(item.quantity) || 0), 0);
-      const delivery = subtotal === 0 || subtotal >= 1000 ? 0 : 60;
+      const delivery = fulfillmentMode === 'delivery' && subtotal > 0 && subtotal < 1000 ? 60 : 0;
       itemsHost.innerHTML = cartItems.length ? cartItems.map((item, index) => `
         <div class="py-space-sm flex items-start justify-between gap-space-sm">
           <div class="min-w-0"><p class="font-label-lg text-label-lg text-ocean-deep font-bold">${escapeCartText(item.name)}</p>
@@ -666,7 +635,7 @@
       document.getElementById('cart-count').textContent = itemCount;
       document.getElementById('cart-count-label').textContent = `${itemCount} รายการ`;
       document.getElementById('cart-subtotal').textContent = formatBaht(subtotal);
-      document.getElementById('cart-delivery').textContent = delivery === 0 ? 'ฟรี' : formatBaht(delivery);
+      document.getElementById('cart-delivery').textContent = fulfillmentMode === 'pickup' ? 'ไม่มี' : delivery === 0 ? 'ฟรี' : formatBaht(delivery);
       document.getElementById('cart-total').textContent = formatBaht(subtotal + delivery);
       document.querySelectorAll('[data-checkout]').forEach(button => { button.disabled = cartItems.length === 0; });
       const statusPanel = document.getElementById('order-status-panel');
@@ -791,11 +760,12 @@
     function placeOrder(mode) {
       if (!cartItems.length) return;
       const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      const delivery = mode === 'delivery' && subtotal > 0 && subtotal < 1000 ? 60 : 0;
       activeOrder = {
         id: `SK${Date.now().toString().slice(-7)}`,
         mode,
         items: cartItems.map(item => ({ ...item })),
-        total: subtotal + (subtotal === 0 || subtotal >= 1000 ? 0 : 60),
+        total: subtotal + delivery,
         status: 'pending',
         createdAt: new Date().toISOString()
       };
@@ -816,36 +786,30 @@
       renderCart();
     }
 
-    initPizzaSizePickers();
-    renderCart();
-    // Toggle Delivery vs Takeaway buttons
-    const btnDelivery = document.getElementById('btn-delivery-mode');
-    const btnTakeaway = document.getElementById('btn-takeaway-mode');
-
-    if (btnDelivery && btnTakeaway) {
-      const setFulfillmentMode = activeButton => {
-        const inactiveButton = activeButton === btnDelivery ? btnTakeaway : btnDelivery;
-        activeButton.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-ocean-deep text-on-primary shadow-md text-left transition-all';
-        inactiveButton.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-white hover:bg-surface-container text-black text-left transition-all border border-slate-200';
-
-        [btnDelivery, btnTakeaway].forEach(button => {
-          const isActive = button === activeButton;
-          const iconBox = button.querySelector('.w-10');
-          const description = button.querySelector('.font-body-sm');
-          const title = button.querySelector('.font-label-lg');
-          iconBox.className = isActive
-            ? 'w-10 h-10 rounded-lg bg-on-primary/10 flex items-center justify-center text-on-primary'
-            : 'w-10 h-10 rounded-lg bg-sand-warm flex items-center justify-center text-black';
-          description.classList.toggle('text-surface-container-high', isActive);
-          description.classList.toggle('text-black', !isActive);
-          title.classList.toggle('text-black', !isActive);
-        });
-      };
-
-      btnDelivery.addEventListener('click', () => setFulfillmentMode(btnDelivery));
-      btnTakeaway.addEventListener('click', () => setFulfillmentMode(btnTakeaway));
-      setFulfillmentMode(btnDelivery);
+    function setFulfillmentMode(mode) {
+      fulfillmentMode = mode === 'pickup' ? 'pickup' : 'delivery';
+      const deliveryButton = document.getElementById('cart-delivery-mode');
+      const pickupButton = document.getElementById('cart-pickup-mode');
+      const isDelivery = fulfillmentMode === 'delivery';
+      deliveryButton.className = isDelivery
+        ? 'flex items-center justify-center gap-2 rounded-xl bg-ocean-deep px-2 py-3 text-sm font-bold text-on-primary shadow-sm transition'
+        : 'flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-2 py-3 text-sm font-bold text-black transition hover:bg-slate-50';
+      pickupButton.className = !isDelivery
+        ? 'flex items-center justify-center gap-2 rounded-xl bg-ocean-deep px-2 py-3 text-sm font-bold text-on-primary shadow-sm transition'
+        : 'flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-2 py-3 text-sm font-bold text-black transition hover:bg-slate-50';
+      deliveryButton.setAttribute('aria-pressed', String(isDelivery));
+      pickupButton.setAttribute('aria-pressed', String(!isDelivery));
+      document.getElementById('checkout-icon').textContent = isDelivery ? 'delivery_dining' : 'storefront';
+      document.getElementById('checkout-label').textContent = isDelivery
+        ? 'ยืนยันคำสั่งซื้อ · จัดส่ง'
+        : 'ยืนยันคำสั่งซื้อ · รับที่ร้าน';
+      renderCart();
     }
+
+    initPizzaSizePickers();
+    document.getElementById('cart-delivery-mode').addEventListener('click', () => setFulfillmentMode('delivery'));
+    document.getElementById('cart-pickup-mode').addEventListener('click', () => setFulfillmentMode('pickup'));
+    setFulfillmentMode(fulfillmentMode);
   </script>
 </main><footer class="relative z-10 w-full bg-white/85 backdrop-blur-xl mt-space-xl border-t border-white/60 shadow-lg"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-ocean-deep flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">waves</span></div><span class="font-headline-sm text-headline-sm text-ocean-deep font-bold">Songkhla Beach Trattoria</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">อบสดใหม่ด้วยเตาฟืนความร้อน 450°C ริมหาดชลาทัศน์ ส่งตรงความกรอบนุ่มแบบเนเปิลส์แท้ถึงบ้านคุณ</p><div class="flex items-center gap-space-xs text-tertiary"><span class="material-symbols-outlined text-[18px]">eco</span><span class="font-label-md text-label-md font-bold">Micro-vented Thermal Eco-boxes</span></div></div><div><span class="font-label-lg text-label-lg text-ocean-deep block mb-space-sm font-bold">บริการสั่งอาหาร</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">จัดส่งเดลิเวอรี ชายหาด &amp; ตัวเมือง</a></li><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">สั่งล่วงหน้ารับที่ร้าน (Self-Pickup)</a></li><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">เมนูจัดเลี้ยงริมทะเล (Catering)</a></li><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">สถานะเตาอบแบบเรียลไทม์</a></li></ul></div><div><span class="font-label-lg text-label-lg text-ocean-deep block mb-space-sm font-bold">เตาฟืน &amp; วัตถุดิบ</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="">แป้งสาลีหมักธรรมชาติ 48 ชม.</li><li class="">มอสซาเรลล่าสดและมะเขือเทศ San Marzano</li><li class="">ฟืนไม้ยางพาราคัดพิเศษเมืองสงขลา</li><li class="">อาหารทะเลสดจากท่าเรือประมงเก้าเส้ง</li></ul></div><div><span class="font-label-lg text-label-lg text-ocean-deep block mb-space-sm font-bold">ติดต่อ &amp; ที่ตั้งหน้าร้าน</span><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">ถนนราชดำเนิน ตำบลบ่อยาง อำเภอเมืองสงขลา 90000</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">เปิดบริการทุกวัน: 11:30 - 22:00 น.</p><div class="flex items-center gap-space-xs text-oven-flame font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-[18px]">call</span><span class="">สายด่วน: 02 712 9845</span></div></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-md text-on-surface-variant font-body-sm text-body-sm border-t border-slate-200/60"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-ocean-deep text-[18px]">sailing</span><span class="">© 2025 Songkhla Local Pizza Artisanal Wood-Fired Co. All rights reserved.</span></div><div class="flex items-center gap-space-md font-label-md text-label-md"><span class="font-semibold">ชลาทัศน์ • สมิหลา • เก้าเส้ง</span><span class="text-tertiary font-bold">450°C Beachside Wood Oven</span></div></div></div></footer>
 </body></html>

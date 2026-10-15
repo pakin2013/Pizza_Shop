@@ -141,7 +141,8 @@
 <span class="text-xs text-on-surface-variant block font-medium">ราคาต่อ 1 ถาด (12 นิ้ว)</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿690</span>
 </div>
-<button class="px-space-md py-2.5 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-2 shadow-sm transition-all font-bold" onclick="addToOrder('Prosciutto 24 Mesi &amp; Stracciatella', 690, '12 นิ้ว')" type="button">
+<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="690" aria-label="เลือกขนาดพิซซ่า"></select>
+<button class="px-space-md py-2.5 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-2 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Prosciutto 24 Mesi &amp; Stracciatella', 690)" type="button">
 <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
 <span class="">สั่งถาดนี้ทันที</span>
 </button>
@@ -208,7 +209,8 @@
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿650 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addToOrder('Tartufo Nero &amp; Porcini', 650, '12 นิ้ว')" type="button">
+<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="650" aria-label="เลือกขนาดพิซซ่า"></select>
+<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Tartufo Nero &amp; Porcini', 650)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
 </button>
@@ -252,7 +254,8 @@
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿690 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addToOrder('Prosciutto 24 Mesi &amp; Stracciatella', 690, '12 นิ้ว')" type="button">
+<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="690" aria-label="เลือกขนาดพิซซ่า"></select>
+<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Prosciutto 24 Mesi &amp; Stracciatella', 690)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
 </button>
@@ -296,7 +299,8 @@
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿450 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addToOrder('Margherita DOP Rustica', 450, '12 นิ้ว')" type="button">
+<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="450" aria-label="เลือกขนาดพิซซ่า"></select>
+<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Margherita DOP Rustica', 450)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
 </button>
@@ -340,7 +344,8 @@
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿590 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addToOrder('4 Formaggi &amp; Miele', 590, '12 นิ้ว')" type="button">
+<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="590" aria-label="เลือกขนาดพิซซ่า"></select>
+<button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, '4 Formaggi &amp; Miele', 590)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
 </button>
@@ -711,6 +716,29 @@
       saveCart();
     }
 
+    function initPizzaSizePickers() {
+      const sizes = [
+        { value: 'small', label: 'เล็ก · 4 สไลด์', factor: 0.8 },
+        { value: 'medium', label: 'กลาง · 6 สไลด์', factor: 1 },
+        { value: 'large', label: 'ใหญ่ · 8 สไลด์', factor: 1.25 }
+      ];
+      document.querySelectorAll('.pizza-size-picker').forEach(picker => {
+        const basePrice = Number(picker.dataset.basePrice);
+        picker.innerHTML = sizes.map(size => {
+          const price = Math.round((basePrice * size.factor) / 10) * 10;
+          return `<option value="${size.value}" data-price="${price}">${size.label} · ${formatBaht(price)}</option>`;
+        }).join('');
+        picker.value = 'medium';
+      });
+    }
+
+    function addSelectedPizza(button, name, basePrice) {
+      const picker = button.parentElement.querySelector('.pizza-size-picker');
+      const option = picker && picker.selectedOptions[0];
+      const sizeLabels = { small: 'เล็ก (4 สไลด์)', medium: 'กลาง (6 สไลด์)', large: 'ใหญ่ (8 สไลด์)' };
+      addToOrder(name, option ? Number(option.dataset.price) : basePrice, option ? sizeLabels[option.value] : 'กลาง (6 สไลด์)');
+    }
+
     function addToOrder(name, price, size) {
       const existing = cartItems.find(item => item.name === name && item.size === size);
       if (existing) existing.quantity += 1;
@@ -770,6 +798,7 @@
       renderCart();
     }
 
+    initPizzaSizePickers();
     renderCart();
     // Toggle Delivery vs Takeaway buttons
     const btnDelivery = document.getElementById('btn-delivery-mode');

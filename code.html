@@ -91,16 +91,16 @@
 </div>
 </button>
 <!-- Takeaway Mode Pill -->
-<button class="group flex items-start gap-space-sm p-space-md rounded-xl bg-white hover:bg-surface-container text-on-surface text-left transition-all border border-slate-200" id="btn-takeaway-mode" type="button">
-<div class="w-10 h-10 rounded-lg bg-sand-warm flex items-center justify-center text-oven-flame">
+<button class="group flex items-start gap-space-sm p-space-md rounded-xl bg-white hover:bg-surface-container text-black text-left transition-all border border-slate-200" id="btn-takeaway-mode" type="button">
+<div class="w-10 h-10 rounded-lg bg-sand-warm flex items-center justify-center text-black">
 <span class="material-symbols-outlined text-[24px]">storefront</span>
 </div>
 <div class="flex flex-col">
 <div class="flex items-center gap-space-xs">
-<span class="font-label-lg text-label-lg text-ocean-deep font-bold">รับที่ร้าน (Self-Pickup)</span>
+<span class="font-label-lg text-label-lg font-bold">รับที่ร้าน (Self-Pickup)</span>
 <span class="text-xs px-2 py-0.5 rounded-full bg-sand-warm text-oven-flame font-semibold">ไว 15 นาที</span>
 </div>
-<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">สาขาหลักริมหาด · Express Drive Lane</span>
+<span class="font-body-sm text-body-sm text-black mt-0.5">สาขาหลักริมหาด · Express Drive Lane</span>
 </div>
 </button>
 </div>
@@ -823,15 +823,28 @@
     const btnTakeaway = document.getElementById('btn-takeaway-mode');
 
     if (btnDelivery && btnTakeaway) {
-      btnDelivery.addEventListener('click', () => {
-        btnDelivery.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-ocean-deep text-on-primary shadow-md text-left transition-all';
-        btnTakeaway.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-white hover:bg-surface-container text-on-surface text-left transition-all border border-slate-200';
-      });
+      const setFulfillmentMode = activeButton => {
+        const inactiveButton = activeButton === btnDelivery ? btnTakeaway : btnDelivery;
+        activeButton.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-ocean-deep text-on-primary shadow-md text-left transition-all';
+        inactiveButton.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-white hover:bg-surface-container text-black text-left transition-all border border-slate-200';
 
-      btnTakeaway.addEventListener('click', () => {
-        btnTakeaway.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-ocean-deep text-on-primary shadow-md text-left transition-all';
-        btnDelivery.className = 'group flex items-start gap-space-sm p-space-md rounded-xl bg-white hover:bg-surface-container text-on-surface text-left transition-all border border-slate-200';
-      });
+        [btnDelivery, btnTakeaway].forEach(button => {
+          const isActive = button === activeButton;
+          const iconBox = button.querySelector('.w-10');
+          const description = button.querySelector('.font-body-sm');
+          const title = button.querySelector('.font-label-lg');
+          iconBox.className = isActive
+            ? 'w-10 h-10 rounded-lg bg-on-primary/10 flex items-center justify-center text-on-primary'
+            : 'w-10 h-10 rounded-lg bg-sand-warm flex items-center justify-center text-black';
+          description.classList.toggle('text-surface-container-high', isActive);
+          description.classList.toggle('text-black', !isActive);
+          title.classList.toggle('text-black', !isActive);
+        });
+      };
+
+      btnDelivery.addEventListener('click', () => setFulfillmentMode(btnDelivery));
+      btnTakeaway.addEventListener('click', () => setFulfillmentMode(btnTakeaway));
+      setFulfillmentMode(btnDelivery);
     }
   </script>
 </main><footer class="relative z-10 w-full bg-white/85 backdrop-blur-xl mt-space-xl border-t border-white/60 shadow-lg"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-ocean-deep flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">waves</span></div><span class="font-headline-sm text-headline-sm text-ocean-deep font-bold">Songkhla Beach Trattoria</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">อบสดใหม่ด้วยเตาฟืนความร้อน 450°C ริมหาดชลาทัศน์ ส่งตรงความกรอบนุ่มแบบเนเปิลส์แท้ถึงบ้านคุณ</p><div class="flex items-center gap-space-xs text-tertiary"><span class="material-symbols-outlined text-[18px]">eco</span><span class="font-label-md text-label-md font-bold">Micro-vented Thermal Eco-boxes</span></div></div><div><span class="font-label-lg text-label-lg text-ocean-deep block mb-space-sm font-bold">บริการสั่งอาหาร</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">จัดส่งเดลิเวอรี ชายหาด &amp; ตัวเมือง</a></li><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">สั่งล่วงหน้ารับที่ร้าน (Self-Pickup)</a></li><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">เมนูจัดเลี้ยงริมทะเล (Catering)</a></li><li class=""><a class="hover:text-ocean-deep transition-colors" href="#">สถานะเตาอบแบบเรียลไทม์</a></li></ul></div><div><span class="font-label-lg text-label-lg text-ocean-deep block mb-space-sm font-bold">เตาฟืน &amp; วัตถุดิบ</span><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="">แป้งสาลีหมักธรรมชาติ 48 ชม.</li><li class="">มอสซาเรลล่าสดและมะเขือเทศ San Marzano</li><li class="">ฟืนไม้ยางพาราคัดพิเศษเมืองสงขลา</li><li class="">อาหารทะเลสดจากท่าเรือประมงเก้าเส้ง</li></ul></div><div><span class="font-label-lg text-label-lg text-ocean-deep block mb-space-sm font-bold">ติดต่อ &amp; ที่ตั้งหน้าร้าน</span><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">ถนนราชดำเนิน ตำบลบ่อยาง อำเภอเมืองสงขลา 90000</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">เปิดบริการทุกวัน: 11:30 - 22:00 น.</p><div class="flex items-center gap-space-xs text-oven-flame font-label-lg text-label-lg font-bold"><span class="material-symbols-outlined text-[18px]">call</span><span class="">สายด่วน: 02 712 9845</span></div></div></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-md text-on-surface-variant font-body-sm text-body-sm border-t border-slate-200/60"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-ocean-deep text-[18px]">sailing</span><span class="">© 2025 Songkhla Local Pizza Artisanal Wood-Fired Co. All rights reserved.</span></div><div class="flex items-center gap-space-md font-label-md text-label-md"><span class="font-semibold">ชลาทัศน์ • สมิหลา • เก้าเส้ง</span><span class="text-tertiary font-bold">450°C Beachside Wood Oven</span></div></div></div></footer>

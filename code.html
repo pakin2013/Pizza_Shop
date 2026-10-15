@@ -715,8 +715,6 @@
       const existing = cartItems.find(item => item.name === name && item.size === size);
       if (existing) existing.quantity += 1;
       else cartItems.push({ name, price: Number(price), size, quantity: 1 });
-      activeOrder = null;
-      saveOrder();
       renderCart();
       const summaryBox = document.getElementById('order-summary-box');
       if (summaryBox) {

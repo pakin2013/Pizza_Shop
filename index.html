@@ -138,10 +138,10 @@
 <!-- Quick Order Meta Bar -->
 <div class="mt-space-md flex items-center justify-between gap-space-sm pt-space-xs">
 <div>
-<span class="text-xs text-on-surface-variant block font-medium">ราคาต่อ 1 ถาด (12 นิ้ว)</span>
+<span class="text-xs text-on-surface-variant block font-medium">ราคาต่อ 1 ถาด</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿690</span>
 </div>
-<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="690" aria-label="เลือกขนาดพิซซ่า"></select>
+<span class="material-symbols-outlined text-oven-flame text-[24px]" aria-hidden="true">local_pizza</span><select class="pizza-size-picker w-44 rounded-xl border-2 border-sky-200 bg-gradient-to-br from-white to-sky-50 px-3 py-2 text-sm font-semibold text-ocean-deep shadow-sm outline-none transition focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100" data-base-price="690" aria-label="Pizza size"></select>
 <button class="px-space-md py-2.5 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-2 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Prosciutto 24 Mesi &amp; Stracciatella', 690)" type="button">
 <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
 <span class="">สั่งถาดนี้ทันที</span>
@@ -167,7 +167,7 @@
               เมนูพิซซ่าโฮมเมดเตาฟืน (รายถาด)
             </h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
-              พิซซ่าโฮมเมดแท้สไตล์เนเปิลส์ อบสดใหม่ทั้งถาดตามสั่งด้วยแป้งซาวโดว์หมักธรรมชาติ 48 ชม. เลือกได้ทั้งขนาดถาดกลาง 12 นิ้ว (สำหรับ 2-3 ท่าน) และถาดใหญ่ 14 นิ้ว (+฿150 สำหรับ 4-5 ท่าน)
+              พิซซ่าโฮมเมดแท้สไตล์เนเปิลส์ อบสดใหม่ด้วยแป้งซาวโดว์หมักธรรมชาติ 48 ชม. เลือกขนาดเล็ก 4 สไลด์ กลาง 6 สไลด์ หรือใหญ่ 8 สไลด์ได้ตามต้องการ
             </p>
 </div>
 <!-- Pizza Cards Grid (2x2 on desktop) -->
@@ -196,20 +196,12 @@
                 </p>
 </div>
 <div class="pt-space-xs">
-<!-- Size Pill Selector -->
-<div class="flex items-center justify-between text-xs mb-3 bg-slate-100/80 p-1.5 rounded-xl">
-<span class="text-on-surface-variant font-medium px-2">ขนาดถาด:</span>
-<div class="flex items-center gap-1">
-<button class="px-2.5 py-1 rounded-lg bg-ocean-deep text-on-primary font-bold shadow-xs" type="button">12 นิ้ว</button>
-<button class="px-2.5 py-1 rounded-lg bg-white text-on-surface font-medium hover:bg-surface-container-high transition-colors" type="button">14 นิ้ว (+฿150)</button>
-</div>
-</div>
 <div class="flex items-center justify-between">
 <div>
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿650 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="650" aria-label="เลือกขนาดพิซซ่า"></select>
+<span class="material-symbols-outlined text-oven-flame text-[24px]" aria-hidden="true">local_pizza</span><select class="pizza-size-picker w-44 rounded-xl border-2 border-sky-200 bg-gradient-to-br from-white to-sky-50 px-3 py-2 text-sm font-semibold text-ocean-deep shadow-sm outline-none transition focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100" data-base-price="650" aria-label="Pizza size"></select>
 <button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Tartufo Nero &amp; Porcini', 650)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
@@ -241,20 +233,12 @@
                 </p>
 </div>
 <div class="pt-space-xs">
-<!-- Size Pill Selector -->
-<div class="flex items-center justify-between text-xs mb-3 bg-slate-100/80 p-1.5 rounded-xl">
-<span class="text-on-surface-variant font-medium px-2">ขนาดถาด:</span>
-<div class="flex items-center gap-1">
-<button class="px-2.5 py-1 rounded-lg bg-ocean-deep text-on-primary font-bold shadow-xs" type="button">12 นิ้ว</button>
-<button class="px-2.5 py-1 rounded-lg bg-white text-on-surface font-medium hover:bg-surface-container-high transition-colors" type="button">14 นิ้ว (+฿150)</button>
-</div>
-</div>
 <div class="flex items-center justify-between">
 <div>
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿690 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="690" aria-label="เลือกขนาดพิซซ่า"></select>
+<span class="material-symbols-outlined text-oven-flame text-[24px]" aria-hidden="true">local_pizza</span><select class="pizza-size-picker w-44 rounded-xl border-2 border-sky-200 bg-gradient-to-br from-white to-sky-50 px-3 py-2 text-sm font-semibold text-ocean-deep shadow-sm outline-none transition focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100" data-base-price="690" aria-label="Pizza size"></select>
 <button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Prosciutto 24 Mesi &amp; Stracciatella', 690)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
@@ -286,20 +270,12 @@
                 </p>
 </div>
 <div class="pt-space-xs">
-<!-- Size Pill Selector -->
-<div class="flex items-center justify-between text-xs mb-3 bg-slate-100/80 p-1.5 rounded-xl">
-<span class="text-on-surface-variant font-medium px-2">ขนาดถาด:</span>
-<div class="flex items-center gap-1">
-<button class="px-2.5 py-1 rounded-lg bg-ocean-deep text-on-primary font-bold shadow-xs" type="button">12 นิ้ว</button>
-<button class="px-2.5 py-1 rounded-lg bg-white text-on-surface font-medium hover:bg-surface-container-high transition-colors" type="button">14 นิ้ว (+฿140)</button>
-</div>
-</div>
 <div class="flex items-center justify-between">
 <div>
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿450 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="450" aria-label="เลือกขนาดพิซซ่า"></select>
+<span class="material-symbols-outlined text-oven-flame text-[24px]" aria-hidden="true">local_pizza</span><select class="pizza-size-picker w-44 rounded-xl border-2 border-sky-200 bg-gradient-to-br from-white to-sky-50 px-3 py-2 text-sm font-semibold text-ocean-deep shadow-sm outline-none transition focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100" data-base-price="450" aria-label="Pizza size"></select>
 <button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, 'Margherita DOP Rustica', 450)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
@@ -331,20 +307,12 @@
                 </p>
 </div>
 <div class="pt-space-xs">
-<!-- Size Pill Selector -->
-<div class="flex items-center justify-between text-xs mb-3 bg-slate-100/80 p-1.5 rounded-xl">
-<span class="text-on-surface-variant font-medium px-2">ขนาดถาด:</span>
-<div class="flex items-center gap-1">
-<button class="px-2.5 py-1 rounded-lg bg-ocean-deep text-on-primary font-bold shadow-xs" type="button">12 นิ้ว</button>
-<button class="px-2.5 py-1 rounded-lg bg-white text-on-surface font-medium hover:bg-surface-container-high transition-colors" type="button">14 นิ้ว (+฿150)</button>
-</div>
-</div>
 <div class="flex items-center justify-between">
 <div>
 <span class="text-xs text-on-surface-variant block">ราคาเริ่มต้น</span>
 <span class="font-price-tag text-price-tag text-oven-flame">฿590 <span class="text-xs font-normal text-on-surface-variant">/ ถาด</span></span>
 </div>
-<select class="pizza-size-picker rounded-lg border border-slate-300 bg-white px-2 py-2 text-sm text-ocean-deep" data-base-price="590" aria-label="เลือกขนาดพิซซ่า"></select>
+<span class="material-symbols-outlined text-oven-flame text-[24px]" aria-hidden="true">local_pizza</span><select class="pizza-size-picker w-44 rounded-xl border-2 border-sky-200 bg-gradient-to-br from-white to-sky-50 px-3 py-2 text-sm font-semibold text-ocean-deep shadow-sm outline-none transition focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100" data-base-price="590" aria-label="Pizza size"></select>
 <button class="px-space-md py-2 rounded-xl bg-secondary-container hover:bg-oven-flame text-on-secondary-container hover:text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm transition-all font-bold" onclick="addSelectedPizza(this, '4 Formaggi &amp; Miele', 590)" type="button">
 <span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
 <span class="">ใส่ตะกร้า</span>
@@ -718,9 +686,9 @@
 
     function initPizzaSizePickers() {
       const sizes = [
-        { value: 'small', label: 'เล็ก · 4 สไลด์', factor: 0.8 },
-        { value: 'medium', label: 'กลาง · 6 สไลด์', factor: 1 },
-        { value: 'large', label: 'ใหญ่ · 8 สไลด์', factor: 1.25 }
+        { value: 'small', label: '🍕 เล็ก · 4 สไลด์', factor: 0.8 },
+        { value: 'medium', label: '🍕 กลาง · 6 สไลด์', factor: 1 },
+        { value: 'large', label: '🍕 ใหญ่ · 8 สไลด์', factor: 1.25 }
       ];
       document.querySelectorAll('.pizza-size-picker').forEach(picker => {
         const basePrice = Number(picker.dataset.basePrice);
